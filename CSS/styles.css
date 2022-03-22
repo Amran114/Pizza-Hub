@@ -1,0 +1,8 @@
+body{
+    background-image: url(../Images/backround-image.jpg);
+}
+
+#formy{
+    width: 450px;
+    padding-top: 20px;
+}
