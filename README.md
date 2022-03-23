@@ -1,4 +1,4 @@
- Pizza-Hub
+ # Pizza-Hub
 This is a  hassle free website where you order your pizza with just a click of a butt
 ## Table of content
 + [Description](#description)
@@ -11,6 +11,8 @@ This is a  hassle free website where you order your pizza with just a click of a
 ## Technology used
 * HTML   - To structure web pages.
 * CSS  -  To style web pages.
+* Jvascript- for responsiveness
+* Jquery- for static webpages
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 MIT License
