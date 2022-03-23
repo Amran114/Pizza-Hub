@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand text-light" href="#">Pizzare</a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contact Us</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Contact Us</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
     <!-- The start of the menu page -->
     <div>
         <h1 class="text-center text-light">Welcome to pizza-hub</h1>
@@ -38,16 +38,16 @@
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="./Images/Delicious-pizza.webp" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text text-center"><span>Large@</span>ksh800</p>
+                            <p class="card-text text-center"><span>Large@</span>ksh800</p>
                         </div>
-                      </div>
+                    </div>
 
                 </div>
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="./Images/medium-size-pizza.jpeg" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text text-center"><span>Medium@</span>ksh600</p>
+                            <p class="card-text text-center"><span>Medium@</span>ksh600</p>
                         </div>
                     </div>
                 </div>
@@ -55,84 +55,192 @@
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="./Images/small pizza.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <p class="card-text text-center"><span>Small@</span>ksh500</p>
+                            <p class="card-text text-center"><span>Small@</span>ksh500</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <section class="container" id="formy">
-    <h1 class="text-center bg-primary text-light">Make your Selection</h1>
-    <div>
-        <label>Select pizza type</label>
-        <select class="form-select custom-select-md mb-4" id="pizza-type" aria-label="Default select example">
+        <h1 class="text-center bg-primary text-light">Make your Selection</h1>
+        <div>
+            <label class="text-light">Select pizza type</label>
+            <select class="form-select custom-select-md mb-4" id="pizza-type" aria-label="Default select example">
             <option selected>Hawaiian</option>
             <option value="hawaiian">Hawaiian</option>
             <option value="veggie-pizza">Veggie pizza</option>
             <option value="chicken-Tika">Chicken Tika</option>
             <option value="margarita">Margarita</option>
           </select>
-    </div>
-    <div>
-        <label>Select pizza size</label>
-        <select class="form-select custom-select-md mb-4" id="pizza-size" aria-label="Default select example">
-            <option selected>Large</option>
-            <option value="large">Large</option>
-            <option value="medium">Medium</option>
-            <option value="small">Small</option>
+        </div>
+        <div>
+            <label class="text-light">Select pizza size</label>
+            <select class="form-select custom-select-md mb-4" id="pizza-size" aria-label="Default select example">
+            <option selected value="no-price">Large</option>
+            <option value="large">Large @1300</option>
+            <option value="medium">Medium@800</option>
+            <option value="small">Small@500</option>
           </select>
-    </div>
-    <div>
-        <label>Select Your Toppings</label>
-        <select class="form-select custom-select-md mb-4 " id="Toppings" aria-label="Default select example">
-            <option selected>veggies</option>
-            <option value="veggies">veggies</option>
-            <option value="chick-veggie">Chicken and veggies</option>
-            <option value="black-olives">Black olives</option>
+        </div>
+        <div>
+            <label class="text-light">Select Your Toppings</label>
+            <select class="form-select custom-select-md mb-4" id="toppings" aria-label="Default select example">
+            <option selected value="no-price">veggies</option>
+            <option value="veggies">veggies @200</option>
+            <option value="chick-veggie">Chicken and veggies@400</option>
+            <option value="black-olives">Black olives@50</option>
           </select>
-    </div>
-    <div>
-        <label>Select Your Crust</label>
-        <select class="form-select custom-select-md mb-4 " id="crust-type" aria-label="Default select example">
-            <option selected>Thick crust</option>
-            <option value="thin-crust">Thin crust</option>
-            <option value="original-crust">original crust</option>
+        </div>
+        <div>
+            <label class="text-light">Select Your Crust</label>
+            <select class="form-select custom-select-md mb-4" id="crust-type" aria-label="Default select example">
+            <option selected value="no-price">Thick crust</option>
+            <option value="thin-crust">Thin crust @100</option>
+            <option value="original-crust">original crust @300</option>
           </select>
-    </div>
-    <div class="text-center mb-5">
-        <button class="bg-primary text-light btn-lg" id="order">Place your Order</button>
-    </div>
+        </div>
+        <div class="text-center mb-5">
+            <button class="bg-success text-light btn-lg" id="order">Place your Order</button>
+            <!-- Link to open the total modal -->
+            <p><a href="#pizzaTotal" class="text-decoration-none bg-primary text-light p-2 hidden" rel="modal:open">Checkout</a></p>
+        </div>
+
+        <!--total modal -->
+        <div id="pizzaTotal" class="modal">
+            <div>
+                <table class="table table-light table-borderless">
+                    <thead>
+                        <tr class="text-center12">
+                            <th scope="col">Pizza-Type</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Topping</th>
+                            <th scope="col">Crust</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center12" id="neworder">
+                        <tr>
+                            <td id="type"></td>
+                            <td id="size"></td>
+                            <td id="topping"></td>
+                            <td id="crust"></td>
+                            <td id="Total"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Thanks for shopping with us. Enjoy and Welcome.</p>
+            <p style="font-size:48px">
+                &#128525; &#128151;
+            </p>
+            <div class="mt-4">
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="#noDelivery" id="noDeliveryButton" class="bg-danger text-light text-decoration-none border border-danger p-2" rel="modal:open">No Delivery</a>
+                    </div>
+                    <div class="col-md-5">
+                        <a href="#pizzaDelivery" class="bg-primary text-light text-decoration-none border border-light p-2" rel="modal:open">Home Delivery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Display total for no-delivery-->
+        <div class="modal" id="noDelivery">
+            <div class="card">
+                <div class="card-body text-center8">
+                    <p id="noDeliveryTotal"></p>
+                    <p>Thanks for shopping with us. Enjoy and Welcome.</p>
+                    <p style="font-size:48px">
+                        &#128512; &#128516; &#128525; &#128151;
+                    </p>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="bg-primary mb-2 mt-2 text-light text-decoration-none border border-danger p-2 " rel="modal:close ">Order One More</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Delivery form modal -->
+        <div id="pizzaDelivery" class="modal">
+            <p>Please fill the below details to complete your Delivery <em>Delivery is only within Nairobi</em></p>
+            <p class="font-italic">Note: Delivery Costs Kshs. 300.</p>
+            <div class="mt-8">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="customerName" aria-describedby="nameHelp" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="number" class="form-control" id="customerNumber" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control" id="customerLocation" placeholder="Your Location" required>
+                    </div>
+                    <button class="btn btn-primary mt-2"><a class="text-decoration-none text-light" href="#homeDelivery" id="finaleOrder" rel="modal:open">Submit</a></button>
+                </form>
+            </div>
+
+            <!--Display total with home delivery-->
+            <div class="modal" id="homeDelivery">
+                <div class="card">
+                    <div class="card-body text-center8">
+                        <p id="homeDeliveryTotal"></p>
+                        <p>Thanks for shopping with us. Enjoy and Welcome.</p>
+                        <p style="font-size:48px">
+                            &#128512; &#128516; &#128525; &#128151;
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" onclick='location.reload(true); return false;' class="bg-primary mb-2 mt-2 text-light text-decoration-none border border-danger p-2 " rel="modal:close ">Exit</a>
+                    </div>
+                </div>
+            </div>
     </section>
     <section class="bg-primary">
         <div class="row">
-          <div class="col-md-4">
-            <h1 class="text-light text-center">Locations</h1>
-            <div class="row">
-             <div class="col-md-4">
-                 <p class="text-light">Kilimani<br>Phone Number 0728456392</p>
-             </div>
-             <div class="col-md-4">
-                <p class="text-light">Westlands<br>Phone Number 0728456392</p>
+            <div class="col-md-4">
+                <h1 class="text-light text-center">Locations</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="text-light">Kilimani<br>Phone Number 0728456392</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-light">Westlands<br>Phone Number 0728456392</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-light">Parklands<br>Phone Number 0728456392</p>
+                    </div>
+                </div>
+
             </div>
             <div class="col-md-4">
-                <p class="text-light">Parklands<br>Phone Number 0728456392</p>
+                <h1 class="text-light text-center">Contact Us</h1>
+                <p class="text-light text-center">Facebook<br>Twitter<br>Whatsapp</p>
             </div>
+            <div class="col-md-4">
+                <h1 class="text-light text-center">Branches</h1>
+                <p class="text-light text-center">Kilimani <br> Westlands<br>Parklands</p>
             </div>
-
-          </div>
-          <div class="col-md-4">
-            <h1 class="text-light text-center">Contact Us</h1>
-            <p class="text-light text-center">Facebook<br>Twitter<br>Whatsapp</p>
-          </div>
-          <div class="col-md-4">
-            <h1 class="text-light text-center">Branches</h1>
-            <p class="text-light text-center">Kilimani <br> Westlands<br>Parklands</p>
-          </div>
         </div>
     </section>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="./JS/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js "></script>
+<script src="./JS/script.js "></script>
+
 </html>
+
+
+
+
+
+
+
+
+

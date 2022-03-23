@@ -6,3 +6,20 @@ body{
     width: 450px;
     padding-top: 20px;
 }
+.hidden {
+    display: none;
+}
+.blue {
+    color: blue;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
